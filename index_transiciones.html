@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Document</title>
+    <!--
+    <style>
+        .element{
+            transition-duration: 0.5s;
+            width:200px; height:200px;
+            background: grey;;
+        }
+        .element:hover {
+            background: indigo;
+        }
+        .element2{
+            width:100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        .element2:hover {
+            width:300px;
+        }
+        * {
+          padding: 0;
+          margin: 0;
+        }
+
+        body {
+          font-size: 1.5em;
+          font-family: monospace;
+          text-align: center;
+        }
+
+        h1 {
+          margin-top: 0.5em;
+          color: #000;
+        }
+
+        li {
+          list-style: none;
+          margin: 15px 0;
+          background: yellow;
+        }
+
+        li a { 
+          display: block;
+          width: 300px;
+          padding: 20px 0;
+          background: pink;
+          color: black;
+        }
+
+        #ease {
+          transition: 3s;
+        }
+
+        #linear {
+          transition: 3s linear;
+        }
+
+        #ease-in {
+          transition: 3s ease-in;
+        }
+
+        #ease-out {
+          transition: 3s ease-out;
+        }
+
+        #ease-in-out {
+          transition: 3s ease-in-out;
+        }
+
+        #cubic-bezier {
+          transition: 3s cubic-bezier(0.5,0.5,0,1);
+        }
+
+        #cubic-bezier2 {
+          transition: 3s cubic-bezier(0.5,1,0.5,-0.25);
+        }
+
+        li a:hover {
+          width: 100%;
+        }
+        a{
+            display: inline-block;
+            background: #ddd;
+            color: #222;
+            padding: 8px 16px;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transition-delay: 3s;
+        }
+        a:hover{
+            background: #fff;
+            color:darkred;
+            padding: 32px;
+            border: 1px solid darkred;
+        }
+
+    </style> -->
+</head>
+<body class="text-2xl font-mono text-center">
+    <div class="w-[200px] h-[200px] bg-[grey] hover:bg-[indigo] duration-500"></div>
+    <div class="w-[100px] h-[100px] bg-[red] hover:w-[300px] transition-property: width duration-500"></div>
+    <ul>
+        <li class="ritmo"><a class="ritmo-enlace ease duration-[3s]" href="" id="ease">ease</a></li>
+        <li class="ritmo"><a class="ritmo-enlace ease-linear duration-[3s]" href="" id="linear">linear</a></li>
+        <li class="ritmo"><a class="ritmo-enlace ease-in duration-[3s]" href="" id="ease-in"><code>ease-in</code></a></li>
+        <li class="ritmo"><a class="ritmo-enlace ease-out duration-[3s]" href="" id="ease-out"><code>ease-out</code></a></li>
+        <li class="ritmo"><a class="ritmo-enlace ease-in-out duration-[3s]" href="" id="ease-in-out"><code>ease-in-out</code></a></li>
+        <li class="ritmo"><a class="ritmo-enlace ease-[cubic-bezier(0.5,0.5,0,1)] duration-[3s]" href="" id="cubic-bezier"><code>cubic-bezier(0.5,0.5,0,1)</code></a></li>
+        <li class="ritmo"><a class="ritmo-enlace ease-[cubic-bezier(0.5,1,0.5,-0.25)] duration-[3s]" href="" id="cubic-bezier2"><code>cubic-bezier2(0.5,1,0.5,-0.25)</code></a></li>
+    </ul>
+    <a class="inline-block bg-[#ddd] text-[#222] px-[8px] py-[16px] transition ease-linear delay-[3s] hover:bg-[#fff] hover:text-[darkred] hover:p-8 hover:border-[1px] hover:border-solid hover:border-[darkred]" href="">Hola Óscar</a>
+
+</body>
+</html>

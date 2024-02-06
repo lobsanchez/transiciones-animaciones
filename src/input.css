@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+/*AnimaciÃ³n hover opciones del menÃº principal */
+.ritmo{
+    @apply list-none mx-[15px] my-0 bg-[yellow];
+}
+/*El ancho del li lo he ampliado para que entre todo el texto*/
+.ritmo-enlace{
+    @apply block w-[500px] px-[10px] py-0 bg-[pink] text-black hover:w-[100%];
+}
+.element{
+    @apply w-[200px] h-[200px] bg-[indigo] animate-move;
+    animation-timing-function: linear(
+        0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1,
+        0.5, 0.6, 0.7, 0.8, 0.9, 1,
+        0.7, 0.8, 0.9, 1,
+        0.9, 1,
+        1
+        );
+}
+.element2{
+    @apply w-[100px] h-[100px] bg-[indigo] animate-move2;
+    animation-timing-function: steps(5);
+}
+@tailwind utilities;
+

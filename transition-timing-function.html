@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            margin:15px 0;
+            background: yellow;
+        }
+        li a{
+            display: block;
+            width: 300px;
+            background: pink;
+            color: black;
+            padding: 20px 0;
+        }
+        li a:hover{
+            width: 100%;
+        }
+        #ease{
+            transition-duration: 3s;
+        }
+        #linear{
+            transition: 3s linear;
+        }
+        #ease-in{
+            transition: 3s ease-in;
+        }
+        #ease-out{
+            transition: 3s ease-out;
+        }
+        #ease-in-out{
+            transition: 3s ease-in-out;
+        }
+        #cubic-bezier{
+            transition:3s cubic-bezier(0.5, 0.5, 0, 1);    
+        }
+        #cubic-bezier2{
+            transition:3s cubic-bezier(0.5, 1,0.5,-0.25);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="" id="ease">ease</a></li>
+        <li><a href="" id="linear">linear</a></li>
+        <li><a href="" id="ease-in">ease-in</a></li>
+        <li><a href="" id="ease-out">ease-out</a></li>
+        <li><a href="" id="ease-in-out">ease-in-out</a></li>
+        <li><a href="" id="cubic-bezier">cubic-bezier(0.5,0.5,0,1)</a></li>
+        <li><a href="" id="cubic-bezier2">cubic-bezier(0.5,1,0.5,-0.25)</a></li>
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            background: grey;
+        }
+        .element{
+            width: 200px;
+            height: 200px;
+            background: indigo;
+            animation: move 5s infinite;
+            animation-timing-function: steps(5);
+        }
+        @keyframes move{
+            to{transform: translateX(500px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element"></div>
+    </div>
+</body>
+</html>

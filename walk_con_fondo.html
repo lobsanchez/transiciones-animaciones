@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            background: black;
+        }
+        .cielo{
+            background: url(./img/monkey-sky.png) repeat;
+            width: 100%;
+            height: 148px;
+            animation: movebg 20s linear infinite;
+        }
+        .suelo{
+            background: url(./img/monkey-sea.png) repeat;
+            width: 100%;
+            height: 148px;
+            animation: movebg2 16s linear infinite;
+        }
+        .element{
+            position:relative;
+            bottom: 40px;
+            width: 112px;
+            height: 156px;
+            
+            background: url(./img/bernard-bernoulli.png);
+            animation: walk 0.9s infinite steps(6), paseo 6s linear infinite;
+           
+        }
+        @keyframes walk{
+            from{background-position: 0 0;}
+            to{background-position: -672px 0;}
+        }
+        @keyframes movebg{
+            0%{background-position: 550px;}
+            100%{background-position: 0;}
+        }
+        @keyframes movebg2{
+            0%{background-position: 550px;}
+            100%{background-position: 0;}
+        }
+        @keyframes paseo{
+            from{left:0;}
+            to{left:100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="cielo"></div>
+    <div class="suelo">
+        <div class="element"></div>
+    </div>
+</body>
+</html>
